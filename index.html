@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>DOCth.ink</title>
+  <meta name="description" content="The search is over." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <style>
+    :root{
+      --bg:#fafafa;
+      --fg:#111;
+      --sub:#666;
+    }
+    html,body{
+      height:100%;
+      margin:0;
+      background:var(--bg);
+      color:var(--fg);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+                   "Liberation Mono", "Courier New", monospace;
+    }
+    .wrap{
+      height:100%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:24px;
+    }
+    .brand{
+      animation: fadeIn 480ms ease-out both;
+    }
+    .brand h1{
+      margin:0;
+      font-size: clamp(26px, 4vw, 40px);
+      letter-spacing: 0.08em;
+      font-weight: 600;
+    }
+    .brand h1 .dot {
+    margin-left: -0.25em;
+    margin-right: -0.25em;
+    }
+    .brand p{
+      margin: 18px 0 0;
+      font-size: 15px;
+      color: var(--sub);
+      letter-spacing: 0.02em;
+    }
+    @keyframes fadeIn{
+      from{opacity:0; transform: translateY(6px);}
+      to{opacity:1; transform: translateY(0);}
+    }
+    .blue {
+        color: rgb(18, 110, 186);
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="brand" aria-label="DOCth.ink">
+      <h1><span class="blue">DOC</span>th<span class="dot">.</span>ink</h1>
+      <p>The search is over.</p>
+    </section>
+  </main>
+</body>
+</html>
